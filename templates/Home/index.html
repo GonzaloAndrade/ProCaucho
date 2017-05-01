@@ -1,0 +1,444 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="ProCaucho" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/css/bootstrap.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/css/style.css' %}" type="text/css" />
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="{% static 'Home/css/onepage.css' %}" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="{% static 'Home/css/dark.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/css/font-icons.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/one-page/css/et-line.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/css/animate.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'Home/css/magnific-popup.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'Home/one-page/css/fonts.css' %}" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'Home/css/responsive.css' %}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+
+	<!-- Document Title
+	============================================= -->
+	<title>ProCaucho - Calidad con responsabilidad ambiental.</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="0">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img src="{% static 'Home/one-page/images/logo-mini.png' %}" alt="Canvas Logo"></a>
+						<a class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img src="{% static 'Home/one-page/images/logo-mini.png' %}" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper"><div>Inicio</div></a></li>
+							<li><a href="#" data-href="#section-works"><div>Servicios</div></a></li>
+							<li><a href="#" data-href="#section-contact"><div>Contacto</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider">
+
+			<div class="section parallax swiper_wrapper nopadding nomargin noborder ohidden" style="background-image: url('{% static 'Home/images/caucho_background.jpg' %}');" data-stellar-background-ratio="0.3">
+
+				<div class="container center">
+					<div class="vertical-middle">
+
+						<div class="emphasis-title">
+                            <img class="logo-header" src="{% static 'Home/images/logo.png' %}">
+							<p class="lead" style="font-size: 32px;margin-top: -20px;">Calidad con responsabilidad ambiental.</p>
+						</div>
+						<a href="#" class="button button-dark t400 ls2 button-rounded hidden-xs" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contáctenos</a>
+						<a href="#" class="button button-border button-rounded hidden-xs" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Nuestros Proyectos</a>
+
+					</div>
+				</div>
+
+				<div class="video-wrap">
+					<div class="video-overlay" style="background: rgba(255,255,255,0.8);"></div>
+				</div>
+
+			</div>
+
+		</section><!-- #slider end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+
+				<div id="section-works" class="notoppadding">
+
+					<div class="section nomargin">
+						<div class="container clearfix">
+							<div class="divcenter center" style="max-width: 900px;">
+								<h2 class="nobottommargin t300 ls1">​Vendemos Caucho Granulado SBR de alta calidad para tus superficies Deportivas o Decorativas.</h2>
+							</div>
+						</div>
+					</div>
+
+					<!-- Portfolio Items
+					============================================= -->
+					<div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
+
+						<article class="portfolio-item pf-media pf-icons wide">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/1.jpg' %}" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Ideal para Parques Infantiles</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-illustrations">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/2.jpg' %}" alt="Locked Steel Gate">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Losetas de Caucho</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-graphics pf-uielements">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/3.jpg' %}" alt="Mac Sunglasses">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Diferentes Tipos</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-icons wide">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/4.jpg' %}" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Múltiples Colores</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-uielements pf-media wide">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/5.jpg' %}" alt="Console Activity">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Ideal para Pistas Atléticas</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-media pf-icons">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/6.jpg' %}" alt="Open Imagination">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Durables y Resistentes</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="portfolio-item pf-uielements pf-icons">
+							<div class="portfolio-image">
+								<a href="#">
+									<img src="{% static 'Home/one-page/images/portfolio/mixed/7.jpg' %}" alt="Backpack Contents">
+								</a>
+								<div class="portfolio-overlay">
+									<div class="portfolio-desc">
+										<h3><a href="#">Calidad Garantizada</a></h3>
+									</div>
+								</div>
+							</div>
+						</article>
+
+					</div><!-- #portfolio end -->
+				</div>
+
+				<div id="section-services" class="notoppadding">
+					<div class="section dark nomargin">
+						<div class="divcenter center" style="max-width: 900px;">
+							<h2 class="nobottommargin t300 ls1">Realizamos envíos a todo el país <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-light button-large notopmargin nobottommargin" style="position: relative; top: -3px;">Llámanos</a></h2>
+						</div>
+					</div>
+                        <div class="row" style="margin-top: 20px">
+                        <div class="col-md-4 text-center" style="padding: 20px;">
+                            <img style="width: 200px" src="{% static 'Home/images/logoNatural.png' %}" alt="Backpack Contents">
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 20px;">
+                            <img style="width: 200px" src="{% static 'Home/images/logoReciclaje.png' %}" alt="Backpack Contents">
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 20px;">
+                            <img style="width: 180px" src="{% static 'Home/images/logoPrimero.png' %}" alt="Backpack Contents">
+                        </div>
+                        </div>
+					<div class="section parallax nomargin dark" style="background-image: url({% static 'Home/images/colors.jpg' %}); padding: 90px 0;" data-stellar-background-ratio="0.3">
+
+						<div class="container clearfix">
+
+							<div class="col_two_fifth nobottommargin">&nbsp;</div>
+
+							<div class="col_three_fifth nobottommargin col_last">
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div id="section-contact" class="page-section notoppadding">
+
+					<div class="row noleftmargin norightmargin bottommargin-lg common-height">
+						<div id="headquarters-map" class="col-md-8 col-sm-6 gmap hidden-xs" style="padding: 0px"></div>
+						<div class="col-md-4 col-sm-6" style="background-color: #F5F5F5;">
+							<div class="col-padding max-height">
+								<h3 class="font-body t400 ls1">Nuestras Oficinas</h3>
+
+								<div style="font-size: 16px; line-height: 1.7;">
+									<address style="line-height: 1.7;">
+										<strong>Ecuador:</strong><br>
+										Todos los Santos 128 y Victor Emilio Estrada <br>
+										Guayaquil<br>
+									</address>
+
+									<div class="clear topmargin-sm"></div>
+
+									<div class="clear topmargin"></div>
+
+									<abbr title="Phone Number"><strong>Teléfono:</strong></abbr> 045021120<br>
+                                    <abbr title="Phone Number"><strong>Celular:</strong></abbr> 0993080261<br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> ventas@procaucho.com.ec
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="container clearfix">
+
+						<div class="divcenter topmargin" style="max-width: 850px;">
+
+							<div class="contact-widget">
+
+								<div class="contact-form-result"></div>
+
+								<form class="nobottommargin" id="contactForm" name="template-contactform" method="post">
+
+									<div class="form-process"></div>
+
+									<div class="col_half">
+										<input type="text" id="name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Nombre" />
+									</div>
+									<div class="col_half col_last">
+										<input type="email" id="email" name="template-contactform-email" value="" class="required email sm-form-control border-form-control" placeholder="Email" />
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col_one_third">
+										<input type="text" id="phone" name="template-contactform-phone" value="" class="sm-form-control border-form-control" placeholder="Celular" />
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col_full">
+										<textarea class="required sm-form-control border-form-control" id="message" name="template-contactform-message" rows="7" cols="30" placeholder="Tu Mensaje"></textarea>
+									</div>
+
+									<div class="col_full center">
+										<button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" id="submitbutton" name="template-contactform-submit" value="submit">Enviar Mensaje</button>
+										<br>
+										<small style="display: block; font-size: 13px; margin-top: 15px;">Te responderemos en aproximadamente 2 a 4 horas.</small>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="col_full hidden">
+										<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+									</div>
+
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark noborder">
+
+			<div id="copyrights">
+				<div class="container center clearfix">
+					BioCaucho® 2017 | Todos los Derechos Reservados
+				</div>
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="{% static 'Home/js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'Home/js/plugins.js' %}"></script>
+
+	<!-- Google Map JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDWFYJg1gF1x4l2eyTOl5KiWf5t2Gc8l1U"></script>
+	<script type="text/javascript" src="{% static 'Home/js/jquery.gmap.js' %}"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="{% static 'Home/js/functions.js' %}"></script>
+
+	<script type="text/javascript">
+
+		jQuery(window).load(function(){
+
+			// Google Map
+			jQuery('#headquarters-map').gMap({
+				address: 'Guayaquil, Ecuador',
+				maptype: 'ROADMAP',
+				zoom: 14,
+				markers: [
+					{
+						address: "Guayaquil, Ecuador",
+						html: "Guayaquil, Ecuador",
+						icon: {
+							image: "http://caucho.com.ec/static/Home/images/icons/map-icon-red.png",
+							iconsize: [32, 32],
+							iconanchor: [14,44]
+						}
+					}
+				],
+				doubleclickzoom: false,
+				controls: {
+					panControl: false,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				},
+				styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+			});
+
+		});
+
+	</script>
+<script>
+    $(document).ready(function() {
+       $("#contactForm").submit(function(event){
+           $("#submitbutton").html("Enviando...");
+           var name = $('#name').val();
+           var email = $('#email').val();
+           var phone = $('#phone').val();
+           var textarea = $('#message').val();
+            $.ajax({
+                 type:"POST",
+                 url:"/contact/",
+                'data': {
+                    'name': name,
+                    'email': email,
+                    'phone': phone,
+                    'textarea': textarea,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}',
+                },
+                success: function() {
+                    // Success message
+                    $("#contactForm").html("<strong>Tu mensaje ha sido enviado. </strong>");
+                },
+                error: function() {
+                    // Fail message
+                    $("#contactForm").html("<strong>Parece que hubo un problema. Intenta nuevamente más tarde. </strong>");
+
+                },
+            });
+            return false; //<---- move it here
+       });
+
+});
+</script>
+</body>
+</html>
