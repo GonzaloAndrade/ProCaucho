@@ -2893,7 +2893,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 .swiper_wrapper {
 	width: 100%;
-	height: 500px;
+	height: 650px;
 	overflow: hidden;
 }
 
@@ -13538,3 +13538,217 @@ body:not(.no-transition) #wrapper,
         }
 
     }
+
+
+#banner {
+    background-color: #333333;
+    color: #ffffff;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1680px) {
+	#banner > article.full {
+    min-height: 70vh;
+}
+}
+
+@media screen and (max-width: 980px){
+#banner > article.full {
+    min-height: 55vh;
+}
+}
+
+
+#banner > article.full {
+    min-height: 65vh;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+#banner > article.full {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 736px){
+#banner > article.full {
+    min-height: 0;
+}
+}
+
+
+#banner > article.full .content {
+    width: 35em;
+}
+
+#banner > article .content {
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+#banner > article {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    padding: 8em 4em 6.25em 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+#banner > article.half {
+    min-height: 50vh;
+    width: 50%;
+}
+
+@media screen and (max-width: 980px){
+	#banner > article.half {
+    min-height: 35vh;
+}
+}
+
+
+@media screen and (max-width: 736px){
+		#banner > article.half {
+    min-height: 0;
+}
+}
+
+@media screen and (max-width: 480px){
+	#banner > article.half {
+    width: 100%;
+}
+}
+
+#video1-pop { display:none; }
+#video2-pop { display:none; }
+#video3-pop { display:none; }
+#video4-pop { display:none; }
+
+/*CSS*/
+video {
+    width: 100%;
+    height: auto;
+
+}
+
+.section-head {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.testimonials .item-box {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.testimonials .item-box .quote {
+    width: 60px;
+    margin: 0 auto 30px;
+    opacity: .3;
+}
+
+.testimonials .item-box p {
+    font-size: 14px;
+    color: #999;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.testimonials .item-box .info h6 {
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.testimonials .item-box .info span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+}
+
+.testimonials .item-box .info .author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.section-head h2 span {
+}
+
+.works .item-img {
+    position: relative;
+    margin-top: 30px;
+}
+
+.works .item-img-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.works .filtering .filter {
+    display: inline-block;
+    padding: 4px 10px;
+    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.works .filtering .active {
+    background: #1A237E;
+    background: -webkit-gradient(linear, left top, right top, from(#1A237E), to(#2576FD));
+    background: linear-gradient(to right, #1A237E, #2576FD);
+    -webkit-box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.filtering span {
+    margin: 0 5px;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+}

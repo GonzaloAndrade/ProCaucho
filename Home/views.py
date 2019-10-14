@@ -6,6 +6,13 @@ from django.shortcuts import render_to_response
 from django.core.mail import send_mail
 import datetime
 import json
+from django.shortcuts import render
+
+
+# Create your views here.
+def home(request, template='Home/index.html', extra_context=None):
+    return render(request, template, {})
+
 
 # Create your views here.
 def contact(request):

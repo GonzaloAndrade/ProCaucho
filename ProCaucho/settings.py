@@ -31,7 +31,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['procaucho.com.ec', 'procaucho.ec', 'biocaucho.com.ec', 'biocaucho.ec']
+ALLOWED_HOSTS = ['procaucho.com.ec', 'procaucho.ec', 'biocaucho.com.ec', 'biocaucho.ec', '127.0.0.1']
 
 
 # Application definition
@@ -61,15 +61,15 @@ INSTALLED_APPS = (
     'Home'
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+]
 
 ROOT_URLCONF = 'ProCaucho.urls'
 
@@ -79,16 +79,16 @@ WSGI_APPLICATION = 'ProCaucho.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.mysql',
-       'NAME': 'Mysql',
-       'USER': 'root',
-       'PASSWORD': 'monica22',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-       'PORT': '3306',
-    }
-}
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'Mysql',
+#        'USER': 'root',
+#        'PASSWORD': 'monica22',
+#         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+#        'PORT': '3306',
+#     }
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
