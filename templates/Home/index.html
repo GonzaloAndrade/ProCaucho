@@ -35,7 +35,46 @@
     <!-- Document Title
     ============================================= -->
     <title>BioCaucho - Calidad con responsabilidad ambiental.</title>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '579269282606144');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=579269282606144&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153579964-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153579964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-153579964-1');
+</script>
 </head>
 
 <body class="stretched">
@@ -97,10 +136,10 @@
              style="background-image: url('{% static 'Home/images/parallax.jpg' %}'); background-size: cover"
              data-stellar-background-ratio="0.3">
 
-{#             <video style="position: absolute;" id="bgvid" playsinline="" autoplay="" muted="" loop="">#}
-{##}
-{#        <source src="https://biocaucho.com.ec/static/Home/video/biocaucho.mp4" type="video/mp4">#}
-{#        </video>#}
+            {#             <video style="position: absolute;" id="bgvid" playsinline="" autoplay="" muted="" loop="">#}
+            {##}
+            {#        <source src="https://biocaucho.com.ec/static/Home/video/biocaucho.mp4" type="video/mp4">#}
+            {#        </video>#}
 
             <div class="container center">
                 <div class="vertical-middle">
@@ -108,13 +147,16 @@
                     <p class="lead" style="font-size: 32px;margin-top: -20px;">Calidad con responsabilidad
                         ambiental.</p>
                     <div class="emphasis-title">
-{#                        <iframe width="550" height="315"#}
-{#                                src="https://www.youtube.com/embed/rTyIIcz-rfk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"#}
-{#                                frameborder="0"></iframe>#}
+                        {#                        <iframe width="550" height="315"#}
+                        {#                                src="https://www.youtube.com/embed/rTyIIcz-rfk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"#}
+                        {#                                frameborder="0"></iframe>#}
                         <div>
-                            <a href="https://wa.me/593959032339" target="_blank" class="button button-dark t400 ls2 button-rounded"
+                            <a href="https://wa.me/593959032339" target="_blank"
+                               class="button button-dark t400 ls2 button-rounded"
                                data-easing="easeInOutExpo" data-speed="1250"
-                               data-offset="70"> <img alt="whatsapp" style="height: 25px" src="{% static 'Home/images/whatsapp-512.png' %}"> Contacto por Whatsapp</a>
+                               data-offset="70"> <img alt="whatsapp" style="height: 25px"
+                                                      src="{% static 'Home/images/whatsapp-512.png' %}"> Contacto por
+                                Whatsapp</a>
                             <a href="#" class="button button-border button-rounded hidden-xs"
                                data-scrollto="#section-works"
                                data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Nuestros Proyectos</a>
@@ -179,18 +221,26 @@
     </article>
 </section>
 
-            <div id="video1-pop"><video controls width="600" height="600">
-  <source src="{% static 'Home/video/video1.mp4' %}" type="video/mp4" />
-</video></div>
-            <div id="video2-pop"><video controls width="600" height="600">
-  <source src="{% static 'Home/video/video2.mp4' %}" type="video/mp4" />
-</video></div>
-            <div id="video3-pop"><video controls width="600" height="600">
-  <source src="{% static 'Home/video/video3.mp4' %}" type="video/mp4" />
-</video></div>
-            <div id="video4-pop"><video controls width="600" height="600">
-  <source src="{% static 'Home/video/video4.mp4' %}" type="video/mp4" />
-</video></div>
+<div id="video1-pop">
+    <video controls width="600" height="600">
+        <source src="{% static 'Home/video/video1.mp4' %}" type="video/mp4"/>
+    </video>
+</div>
+<div id="video2-pop">
+    <video controls width="600" height="600">
+        <source src="{% static 'Home/video/video2.mp4' %}" type="video/mp4"/>
+    </video>
+</div>
+<div id="video3-pop">
+    <video controls width="600" height="600">
+        <source src="{% static 'Home/video/video3.mp4' %}" type="video/mp4"/>
+    </video>
+</div>
+<div id="video4-pop">
+    <video controls width="600" height="600">
+        <source src="{% static 'Home/video/video4.mp4' %}" type="video/mp4"/>
+    </video>
+</div>
 
 <!-- Content
 ============================================= -->
@@ -355,8 +405,8 @@
 
         </div>
 
-                <!-- =====================================
-        ==== Start Works -->
+        <!-- =====================================
+==== Start Works -->
 
         <section id="section-works" class="works section-padding" data-scroll-index="2">
             <div class="container">
@@ -492,7 +542,8 @@
         ======================================= -->
 
 
-<section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7" data-background="img/bg4.jpg">
+        <section class="testimonials section-padding bg-img bg-fixed pos-re" data-overlay-dark="7"
+                 data-background="img/bg4.jpg">
             <div class="container">
                 <div class="row">
 
@@ -505,8 +556,10 @@
                             <span class="quote">
                                 <img src="img/quot.png" alt="">
                             </span>
-                            <p>El producto es muy bueno, da confianza a los chicos que entrenan pues el ambiente es más seguro. El lugar mejoró estéticamente. Se ve mucho más amplio.</p>
-                            <p>El personal de instalación es profesional, trabaja rápido y tiene excelentes acabados.</p>
+                            <p>El producto es muy bueno, da confianza a los chicos que entrenan pues el ambiente es más
+                                seguro. El lugar mejoró estéticamente. Se ve mucho más amplio.</p>
+                            <p>El personal de instalación es profesional, trabaja rápido y tiene excelentes
+                                acabados.</p>
                             <div class="info">
                                 <div class="author-img">
                                     <img src="{% static 'Home/images/clients.jpg' %}" alt="">
@@ -521,8 +574,10 @@
                             <span class="quote">
                                 <img src="img/quot.png" alt="">
                             </span>
-                            <p>Excelente calidad y durabilidad. Recomendado para Gimnasios y Box, se nota que utilizan tecnología a precios muy cómodos.</p>
-                            <p>Si buscas elegancia en tu gimnasio, durabilidad y sobre todo excelente producto, esta es tu oportunidad.</p>
+                            <p>Excelente calidad y durabilidad. Recomendado para Gimnasios y Box, se nota que utilizan
+                                tecnología a precios muy cómodos.</p>
+                            <p>Si buscas elegancia en tu gimnasio, durabilidad y sobre todo excelente producto, esta es
+                                tu oportunidad.</p>
                             <div class="info">
                                 <div class="author-img">
                                     <img src="{% static 'Home/images/clients.jpg' %}" alt="">
@@ -537,8 +592,10 @@
                             <span class="quote">
                                 <img src="img/quot.png" alt="">
                             </span>
-                            <p>El producto me parece excelente, buena textura, buen material. Es justo el que se requiere en este tipo de negocios. </p>
-                            <p>Los recomendaría por ser una empresa seria, que cumple los tiempos de entrega y más que todo con la calidad ofertada.</p>
+                            <p>El producto me parece excelente, buena textura, buen material. Es justo el que se
+                                requiere en este tipo de negocios. </p>
+                            <p>Los recomendaría por ser una empresa seria, que cumple los tiempos de entrega y más que
+                                todo con la calidad ofertada.</p>
                             <div class="info">
                                 <div class="author-img">
                                     <img src="{% static 'Home/images/clients.jpg' %}" alt="">
@@ -553,7 +610,8 @@
                             <span class="quote">
                                 <img src="img/quot.png" alt="">
                             </span>
-                            <p>Excelente servicio, producto de excelente calidad con súper buenos precios. Totalmente recomendados!</p>
+                            <p>Excelente servicio, producto de excelente calidad con súper buenos precios. Totalmente
+                                recomendados!</p>
                             <div class="info">
                                 <div class="author-img">
                                     <img src="{% static 'Home/images/clients.jpg' %}" alt="">
@@ -568,7 +626,8 @@
                             <span class="quote">
                                 <img src="img/quot.png" alt="">
                             </span>
-                            <p>El producto me parece excelente, el servicio es eficaz y a tiempo. Los recomendaria sin pensarlo porque son numero 1 en atencion y calidad de producto.</p>
+                            <p>El producto me parece excelente, el servicio es eficaz y a tiempo. Los recomendaria sin
+                                pensarlo porque son numero 1 en atencion y calidad de producto.</p>
                             <div class="info">
                                 <div class="author-img">
                                     <img src="{% static 'Home/images/clients.jpg' %}" alt="">
@@ -680,6 +739,57 @@
     </div>
 
 </section><!-- #content end -->
+
+<div type="floating" class="Window__Component-sc-17wvysh-0 gFNMzL">
+    <div id="whatsapp-bubble" type="floating" class="Window__WindowComponent-sc-17wvysh-1 jIJgoF" style="width: 360px;">
+        <div id="whatsapp-close" color="rgb(255, 255, 255)" role="button" tabindex="0" class="Close__Component-sc-1l05yq5-0 jMFFum"></div>
+        <div class="Header__Component-sc-1y135nm-0 kNllFr">
+            <div size="52" class="UserImage__Component-sc-1x4ogkw-0 guKjhD">
+                <div class="UserImage__ImageContainer-sc-1x4ogkw-1 crNxdk">
+                    <div class="UserImage__Image-sc-1x4ogkw-2 dqRegB"></div>
+                </div>
+            </div>
+            <div class="Header__Info-sc-1y135nm-1 jNSOdb">
+                <div class="Header__Name-sc-1y135nm-2 cVpUyx">Andrea Cedeño</div>
+                <div class="Header__AnswerTime-sc-1y135nm-3 hpmnDB">Online</div>
+            </div>
+        </div>
+        <div pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png"
+             class="WhatsappChat__Component-sc-1wqac52-0 eLHpTE">
+            <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
+                <div class="WhatsappDots__Component-pks5bf-0 eJJEeC" style="opacity: 0;">
+                    <div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax"></div>
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz"></div>
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt"></div>
+                    </div>
+                </div>
+                <div class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq" style="opacity: 1;">
+                    <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">Andrea Cedeño</div>
+                    <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Hola 👋<br><br>¿Cómo te podemos ayudar en
+                        BioCaucho?
+                    </div>
+                    <div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">18:40</div>
+                </div>
+            </div>
+        </div>
+        <a role="button" href="https://api.whatsapp.com/send?phone=593993526684" title="WhatsApp"
+           class="DefaultButton__DefaultButtonComponent-ulobej-0 dmUxkW">
+            <svg width="20" height="20" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                 clip-rule="evenodd" class="WhatsappButton__Icon-jyajcx-0 xcsGE">
+                <path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path>
+            </svg>
+            <span class="DefaultButton__DefaultButtonText-ulobej-1 cLTmnV">Comenzar Chat</span></a>
+    </div>
+    <div id="whatsapp-button" role="button" tabindex="0" type="bubble" class="Bubble__BubbleComponent-sc-83hmjh-2 cyXCsg">
+        <div class="Icon__Component-sc-6s5exc-0 jUeIxo Bubble__StyledIcon-sc-83hmjh-1 OycIV">
+            <svg viewBox="0 0 90 90" fill="rgb(255, 255, 255)" width="32" height="32">
+                <path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path>
+            </svg>
+        </div>
+        <div class="Bubble__BubbleText-sc-83hmjh-0 lbqLwN"></div>
+    </div>
+</div>
 
 <!-- Footer
 ============================================= -->
@@ -882,54 +992,66 @@
     });
 
 
-        // Testimonials owlCarousel
-   // Testimonials owlCarousel
+    // Testimonials owlCarousel
+    // Testimonials owlCarousel
     $('.testimonials .owl-carousel').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 30,
-        mouseDrag:true,
-        autoplay:true,
+        mouseDrag: true,
+        autoplay: true,
         dots: true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
 
-        // isotope
+    // isotope
     $('.gallery').isotope({
-      // options
-      itemSelector: '.items'
+        // options
+        itemSelector: '.items'
     });
 
     var $gallery = $('.gallery').isotope({
-      // options
+        // options
     });
 
     // filter items on button click
-    $('.filtering').on( 'click', 'span', function() {
+    $('.filtering').on('click', 'span', function () {
 
         var filterValue = $(this).attr('data-filter');
 
-        $gallery.isotope({ filter: filterValue });
+        $gallery.isotope({filter: filterValue});
 
     });
 
-    $('.filtering').on( 'click', 'span', function() {
+    $('.filtering').on('click', 'span', function () {
 
         $(this).addClass('active').siblings().removeClass('active');
 
     });
 
+    setTimeout(function(){
+                $( "#whatsapp-bubble" ).toggleClass( "show-whatsapp", "");
+    }, 4000);
+
+    $('#whatsapp-button').on('click', function () {
+        $( "#whatsapp-bubble" ).toggleClass( "show-whatsapp", "");
+    });
+
+    $('#whatsapp-close').on('click', function () {
+        $( "#whatsapp-bubble" ).toggleClass( "show-whatsapp", "");
+    });
+
 </script>
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="92d09e6b-dfd0-40e2-9586-4f9d7d59c555";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+{#<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="92d09e6b-dfd0-40e2-9586-4f9d7d59c555";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>#}
 </body>
 </html>
